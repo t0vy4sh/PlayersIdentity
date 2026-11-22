@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "playerheads",
+  "version": "${version}",
+  "name": "Player Heads",
+  "description": "Główki skinów obok nicków na czacie, większe główki w liście graczy (TAB) i przełącznik nicków nad graczami, który nadpisuje ustawienia serwera.",
+  "authors": [],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.playerheads.PlayerHeadsClient"]
+  },
+  "mixins": [
+    { "config": "playerheads.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
